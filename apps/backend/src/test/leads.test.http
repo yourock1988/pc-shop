@@ -1,0 +1,37 @@
+GET http://localhost/pc-shop/api/v0/leads/
+cookie: session=ff0099aa
+###
+
+GET http://localhost/pc-shop/api/v0/leads/5
+cookie: session=ff0099aa
+###
+
+POST http://localhost/pc-shop/api/v0/leads/
+cookie: session=ff0099aa
+content-type: application/json
+
+{
+  "paymentType":"ooooo",
+  "fixedCost":4444,
+  "customerId":3,
+  "advisorId":4,
+  "productId":101
+}
+###
+
+PATCH http://localhost/pc-shop/api/v0/leads/5
+cookie: session=ff0099aa
+content-type: application/json
+
+{
+  "paymentType":"xxxxxxx",
+  "fixedCost":666666,
+  "customerId":3,
+  "advisorId":114,
+  "productId":101
+}
+###
+
+DELETE http://localhost/pc-shop/api/v0/leads/5
+cookie: session=ff0099aa
+###

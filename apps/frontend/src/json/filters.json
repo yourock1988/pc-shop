@@ -1,0 +1,377 @@
+[
+  {
+    "attrName": "Тип ОЗУ",
+    "attrValues": [
+      {
+        "caption": "DDR4",
+        "count": 53,
+        "isChecked": true
+      },
+      {
+        "caption": "DDR5",
+        "count": 8,
+        "isChecked": true
+      }
+    ]
+  },
+  {
+    "attrName": "Тип накопителя",
+    "attrValues": [
+      {
+        "caption": "SSD",
+        "count": 66,
+        "isChecked": true
+      }
+    ]
+  },
+  {
+    "attrName": "Процессор",
+    "attrValues": [
+      {
+        "caption": "AMD",
+        "count": 22,
+        "isChecked": true
+      },
+      {
+        "caption": "Intel",
+        "count": 28,
+        "isChecked": true
+      },
+      {
+        "caption": "LGA1700",
+        "count": 2,
+        "isChecked": true
+      },
+      {
+        "caption": "INTEL",
+        "count": 1,
+        "isChecked": false
+      }
+    ]
+  },
+  {
+    "attrName": "Количество ядер",
+    "attrValues": [
+      {
+        "caption": "4",
+        "count": 10,
+        "isChecked": false
+      },
+      {
+        "caption": "6",
+        "count": 32,
+        "isChecked": false
+      },
+      {
+        "caption": "10",
+        "count": 1,
+        "isChecked": false
+      },
+      {
+        "caption": "8",
+        "count": 5,
+        "isChecked": false
+      },
+      {
+        "caption": "16",
+        "count": 1,
+        "isChecked": false
+      },
+      {
+        "caption": "12",
+        "count": 2,
+        "isChecked": false
+      },
+      {
+        "caption": "2",
+        "count": 1,
+        "isChecked": false
+      },
+      {
+        "caption": "14",
+        "count": 1,
+        "isChecked": false
+      }
+    ]
+  },
+  {
+    "attrName": "Объем накопителя",
+    "attrValues": [
+      {
+        "caption": "240Gb",
+        "count": 9,
+        "isChecked": false
+      },
+      {
+        "caption": "250Gb",
+        "count": 10,
+        "isChecked": false
+      },
+      {
+        "caption": "500Gb",
+        "count": 28,
+        "isChecked": false
+      },
+      {
+        "caption": "120Gb",
+        "count": 2,
+        "isChecked": false
+      },
+      {
+        "caption": "480Gb",
+        "count": 1,
+        "isChecked": false
+      },
+      {
+        "caption": "512Gb",
+        "count": 1,
+        "isChecked": false
+      },
+      {
+        "caption": "500Gb,",
+        "count": 1,
+        "isChecked": false
+      }
+    ]
+  },
+  {
+    "attrName": "Блок питания",
+    "attrValues": [
+      {
+        "caption": "500W",
+        "count": 5,
+        "isChecked": false
+      },
+      {
+        "caption": "600W",
+        "count": 23,
+        "isChecked": false
+      },
+      {
+        "caption": "650W",
+        "count": 2,
+        "isChecked": false
+      },
+      {
+        "caption": "750W",
+        "count": 17,
+        "isChecked": false
+      },
+      {
+        "caption": "P750W",
+        "count": 4,
+        "isChecked": false
+      },
+      {
+        "caption": "1000W",
+        "count": 2,
+        "isChecked": false
+      },
+      {
+        "caption": "850W",
+        "count": 4,
+        "isChecked": false
+      }
+    ]
+  },
+  {
+    "attrName": "Объем ОЗУ",
+    "attrValues": [
+      {
+        "caption": "8Gb",
+        "count": 22,
+        "isChecked": false
+      },
+      {
+        "caption": "16Gb",
+        "count": 24,
+        "isChecked": false
+      },
+      {
+        "caption": "32Gb",
+        "count": 13,
+        "isChecked": false
+      },
+      {
+        "caption": "4Gb",
+        "count": 1,
+        "isChecked": false
+      },
+      {
+        "caption": "64Gb",
+        "count": 1,
+        "isChecked": false
+      }
+    ]
+  },
+  {
+    "attrName": "Частота процессора",
+    "attrValues": [
+      {
+        "caption": "3.8Ghz",
+        "count": 1,
+        "isChecked": false
+      },
+      {
+        "caption": "3.7 Ghz",
+        "count": 7,
+        "isChecked": false
+      },
+      {
+        "caption": "3.6 Ghz",
+        "count": 9,
+        "isChecked": false
+      },
+      {
+        "caption": "3.6Ghz",
+        "count": 6,
+        "isChecked": false
+      },
+      {
+        "caption": "2.9 Ghz",
+        "count": 7,
+        "isChecked": false
+      },
+      {
+        "caption": "2.6Ghz",
+        "count": 2,
+        "isChecked": false
+      },
+      {
+        "caption": "2.5 Ghz",
+        "count": 4,
+        "isChecked": false
+      },
+      {
+        "caption": "3.5 Ghz",
+        "count": 3,
+        "isChecked": false
+      },
+      {
+        "caption": "4.7 Ghz",
+        "count": 4,
+        "isChecked": false
+      },
+      {
+        "caption": "3.8 Ghz",
+        "count": 1,
+        "isChecked": false
+      },
+      {
+        "caption": "3.9 Ghz",
+        "count": 1,
+        "isChecked": false
+      },
+      {
+        "caption": "3.7Ghz",
+        "count": 2,
+        "isChecked": false
+      },
+      {
+        "caption": "3.4 Ghz",
+        "count": 1,
+        "isChecked": false
+      },
+      {
+        "caption": "2.5Ghz",
+        "count": 3,
+        "isChecked": false
+      },
+      {
+        "caption": "3.2 Ghz",
+        "count": 1,
+        "isChecked": false
+      },
+      {
+        "caption": "4.1 Ghz",
+        "count": 1,
+        "isChecked": false
+      }
+    ]
+  },
+  {
+    "attrName": "Частота ОЗУ",
+    "attrValues": [
+      {
+        "caption": "3200Mhz",
+        "count": 31,
+        "isChecked": false
+      },
+      {
+        "caption": "2666Mhz",
+        "count": 16,
+        "isChecked": false
+      },
+      {
+        "caption": "3600Mhz",
+        "count": 5,
+        "isChecked": false
+      },
+      {
+        "caption": "5600Mhz",
+        "count": 2,
+        "isChecked": false
+      },
+      {
+        "caption": "5200Mhz",
+        "count": 4,
+        "isChecked": false
+      },
+      {
+        "caption": "3733Mhz",
+        "count": 1,
+        "isChecked": false
+      },
+      {
+        "caption": "6000Mhz",
+        "count": 2,
+        "isChecked": false
+      }
+    ]
+  },
+  {
+    "attrName": "Материнская плата",
+    "attrValues": [
+      {
+        "caption": "Asus",
+        "count": 12,
+        "isChecked": false
+      },
+      {
+        "caption": "Gigabyte",
+        "count": 16,
+        "isChecked": false
+      },
+      {
+        "caption": "ASRock",
+        "count": 13,
+        "isChecked": false
+      },
+      {
+        "caption": "LGA1700",
+        "count": 4,
+        "isChecked": false
+      },
+      {
+        "caption": "AsRock",
+        "count": 3,
+        "isChecked": false
+      },
+      {
+        "caption": "AM5",
+        "count": 5,
+        "isChecked": false
+      },
+      {
+        "caption": "MSI",
+        "count": 5,
+        "isChecked": false
+      },
+      {
+        "caption": "LGA1200",
+        "count": 1,
+        "isChecked": false
+      }
+    ]
+  }
+]

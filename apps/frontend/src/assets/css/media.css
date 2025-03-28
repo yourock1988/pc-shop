@@ -1,0 +1,133 @@
+@media only screen and (max-width: 360px) {
+  :root {
+    --catalog-in_a_row: 1;
+    --watched-products-count: 1;
+  }
+  .wrap-logo {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  :root {
+    --catalog-in_a_row: 3;
+    --watched-products-count: 4;
+  }
+  .td-available {
+    display: table-cell;
+  }
+  .layout-centralize {
+    padding: 0 16px;
+  }
+  .layout-header {
+    .wrapper-header {
+      .wrap-select-lang,
+      .wrap-icon-orders,
+      .wrap-icon-notifications,
+      .wrap-icon-compare,
+      .wrap-icon-wishlist {
+        display: block;
+      }
+      .wrap-search {
+        button {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  .layout-verbose-filtration {
+    .wrap-span-filtrated-items-count,
+    .wrap-picker-tile-style {
+      display: block;
+    }
+  }
+  .layout-links {
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-areas:
+      'schedule information help'
+      'schedule services partners';
+  }
+  .tapbar {
+    display: none;
+  }
+  .layout-wrapper {
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  :root {
+    --watched-products-count: 6;
+    --layout-header_height: 72px;
+  }
+  .layout-centralize {
+    padding: 0 24px;
+  }
+  .layout-header {
+    .wrapper-header {
+      .wrap-button-catalog {
+        display: block;
+      }
+    }
+  }
+  .layout-category-navigation {
+    .short-path {
+      display: none;
+    }
+    .long-path {
+      display: block;
+    }
+  }
+  .layout-verbose-filtration {
+    .wrap-select-items-on-page {
+      display: block;
+    }
+    .wrap-button-show-filters {
+      /* display: none; */
+    }
+  }
+  .catalog-filter {
+    display: block;
+  }
+  .layout-links {
+    display: grid;
+    grid-template-rows: 100px 200px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-areas:
+      'schedule schedule schedule schedule'
+      'information help services partners';
+  }
+}
+@media only screen and (min-width: 1280px) {
+  :root {
+    --catalog-in_a_row: 5;
+    --watched-products-count: 7;
+  }
+  .layout-centralize {
+    padding: 0 32px;
+  }
+  .layout-header {
+    .wrapper-header {
+      .wrap-logo {
+        .logo-small {
+          display: none;
+        }
+        .logo-large {
+          display: flex;
+        }
+      }
+    }
+  }
+  .layout-verbose-filtration {
+    .wrap-filter-resets {
+      display: block;
+    }
+  }
+  .layout-links {
+    display: grid;
+    grid-template-rows: 300px;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-areas: 'schedule information help services partners';
+  }
+}

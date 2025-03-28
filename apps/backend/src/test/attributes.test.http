@@ -1,0 +1,21 @@
+GET http://localhost:8801/api/v0/products/13/attributes/
+###
+
+GET http://localhost/pc-shop/api/v0/products/103/attributes/656
+###
+
+POST http://localhost/pc-shop/api/v0/products/103/attributes/
+content-type: application/json
+
+{"key":"ooooo","value":"ooooo"}
+###
+
+PATCH http://localhost/pc-shop/api/v0/products/103/attributes/656
+content-type: application/json
+
+# {"bad":"xxxxx","qwe":"xxxxx"}
+{"key":"xxxxx","value":"xxxxx"}
+###
+
+DELETE http://localhost/pc-shop/api/v0/products/103/attributes/656
+###

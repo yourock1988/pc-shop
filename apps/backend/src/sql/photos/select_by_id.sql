@@ -1,0 +1,6 @@
+SELECT
+  *
+FROM
+  photos
+WHERE
+  product_id = ${parentId} AND id = ${id}

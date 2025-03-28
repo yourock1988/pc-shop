@@ -1,0 +1,37 @@
+GET http://localhost/pc-shop/api/v0/customers/
+cookie: session=ff0099aa
+###
+
+GET http://localhost/pc-shop/api/v0/customers/121
+cookie: session=ff0099aa
+###
+
+POST http://localhost/pc-shop/api/v0/customers/
+cookie: session=ff0099aa
+content-type: application/json
+
+{
+  "password": "dddddd",
+  "phone": "dddddd",
+  "email": "dddddd",
+  "firstName": "dddddd",
+  "secondName": "dddddd"
+}
+###
+
+PATCH http://localhost/pc-shop/api/v0/customers/121
+cookie: session=ff0099aa
+content-type: application/json
+
+{
+  "password": "iiiiii",
+  "phone": "iiiiii",
+  "email": "iiiiii",
+  "firstName": "iiiiii",
+  "secondName": "iiiiii"
+}
+###
+
+DELETE http://localhost/pc-shop/api/v0/customers/121
+cookie: session=ff0099aa
+###

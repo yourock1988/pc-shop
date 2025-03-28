@@ -1,0 +1,25 @@
+GET http://localhost/pc-shop/api/v0/customers/3/compare/
+cookie: session=ff0099aa
+###
+
+GET http://localhost/pc-shop/api/v0/customers/3/compare/76
+cookie: session=ff0099aa
+###
+
+POST http://localhost/pc-shop/api/v0/customers/3/compare/
+cookie: session=ff0099aa
+content-type: application/json
+
+{"productId":73}
+###
+
+PATCH http://localhost/pc-shop/api/v0/customers/3/compare/76
+cookie: session=ff0099aa
+content-type: application/json
+
+{"productId":76}
+###
+
+DELETE http://localhost/pc-shop/api/v0/customers/3/compare/76
+cookie: session=ff0099aa
+###

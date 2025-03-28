@@ -1,0 +1,42 @@
+{
+  "name": "@pc-shop/backend",
+  "version": "0.0.1",
+  "description": "backend",
+  "author": "YouROCK",
+  "license": "MIT",
+  "main": "./src/app.js",
+  "scripts": {
+    "dev": "nodemon --env-file=../../.env.dev ./dev.js",
+    "look": "nodemon --env-file=../../.env.dev ../../build/server/app.js",
+    "start": "node --env-file=../../.env.prod ../../dist/server/app.js",
+    "sql:dev": "cp -R ./src/sql ../../build/server/sql",
+    "sql:prod": "cp -R ./src/sql ../../dist/server/sql",
+    "static:dev": "cp -R ./static ../../build/server/static",
+    "static:prod": "cp -R ./static ../../dist/server/static",
+    "babel:dev": "babel -d ../../build/server ./src --delete-dir-on-start -s",
+    "babel:prod": "babel -d ../../dist/server ./src --delete-dir-on-start",
+    "build:dev": "run-s babel:dev sql:dev static:dev",
+    "build:prod": "run-s babel:prod sql:prod static:prod",
+    "lint:js": "eslint ./src",
+    "lint-staged": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": "eslint"
+  },
+  "eslintConfig": {
+    "extends": [
+      "../../packages/eslint-config/node.json"
+    ]
+  },
+  "babel": {
+    "extends": "../../packages/babel-config/node.json"
+  },
+  "dependencies": {
+    "@yourock88/bind-self": "^0.0.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "pg-promise": "^11.10.2",
+    "ts-case-convert": "^2.1.0"
+  }
+}

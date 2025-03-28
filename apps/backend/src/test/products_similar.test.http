@@ -1,0 +1,20 @@
+GET http://localhost/pc-shop/api/v0/products/103/similar/
+###
+
+GET http://localhost/pc-shop/api/v0/products/103/similar/33
+###
+
+POST http://localhost/pc-shop/api/v0/products/103/similar/
+content-type: application/json
+
+{"relatedProductId":63}
+###
+
+PATCH http://localhost/pc-shop/api/v0/products/103/similar/33
+content-type: application/json
+
+{"relatedProductId":54}
+###
+
+DELETE http://localhost/pc-shop/api/v0/products/103/similar/33
+###
