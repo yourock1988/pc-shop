@@ -10,7 +10,7 @@ set -e
 USER=webmaster
 APP=pc-shop
 DOMAIN=$APP.web-app.click
-PORT=8801
+PORT=8802
 
 echo "Настройка nginx..."
 cat << EOF > /etc/nginx/sites-available/$DOMAIN
@@ -48,8 +48,8 @@ echo "Certbot успешно настроен."
 
 
 echo "Настройка сервиса..."
-systemctl disable $APP.service
-systemctl stop $APP.service
+systemctl disable $APP.service || true
+systemctl stop $APP.service || true
 cat << EOF > /etc/systemd/system/$APP.service 
 [Unit]
 After=network-online.target
