@@ -14,11 +14,12 @@ global.console.log(publicStatic)
 app.use('/static', express.static(publicStatic, { index: 'index.html' }))
 
 if (!isDevDir) {
-  const publicAssets = path.join(baseDir, 'client')
-  global.console.log(publicAssets)
-  app.use('/products', express.static(publicAssets, { index: 'index.html' }))
-  app.use('/product', express.static(publicAssets, { index: 'index.html' }))
-  app.use('/cart', express.static(publicAssets, { index: 'index.html' }))
+  const clientDir = path.join(baseDir, 'client')
+  global.console.log(clientDir)
+  app.use('/assets', express.static(path.join(clientDir, 'assets')))
+  app.use('/products', express.static(clientDir, { index: 'index.html' }))
+  app.use('/product', express.static(clientDir, { index: 'index.html' }))
+  app.use('/cart', express.static(clientDir, { index: 'index.html' }))
 }
 
 module.exports = app
