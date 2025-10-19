@@ -8,7 +8,7 @@ set -e
 
 
 USER=webmaster
-APP=boilerplate
+APP=pc-shop
 DOMAIN=$APP.web-app.click
 
 

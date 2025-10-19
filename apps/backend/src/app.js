@@ -3,7 +3,7 @@ const routes = require('./routes')
 
 const app = express()
 const PORT = process.env.APP_BE_PORT || 5000
-const APP_NAME = 'boilerplate'
+const APP_NAME = 'pc-shop'
 
 global.console.log(process.env.APP_BE_COMMENT)
 

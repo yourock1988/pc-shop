@@ -1,13 +1,13 @@
-# Common Fullstack Monorepo Boilerplate
+# Fullstack application pc-shop
 
 ## Frontend: Vue
 
 ## Backend: Express
 
-### To start your project based on this boilerplate, just clone it:
+### To start pc-shop app, just clone it:
 
 ```console
-git clone https://github.com/yourock1988/fullstack-monorepo-boilerplate/
+git clone https://github.com/yourock1988/pc-shop.git
 ```
 
 ### Install system dependencies:

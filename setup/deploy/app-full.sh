@@ -8,9 +8,9 @@ set -e
 
 
 USER=webmaster
-APP=boilerplate
+APP=pc-shop
 DOMAIN=$APP.web-app.click
-PORT=8801
+PORT=8802
 
 echo "Настройка nginx..."
 cat << EOF > /etc/nginx/sites-available/$DOMAIN

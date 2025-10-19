@@ -9,7 +9,7 @@ set -e
 
 DB=pc_shop_v0
 DB_USER=postgres
-APP=boilerplate
+APP=pc-shop
 PATH_BACKUP=/var/lib/postgresql/backup
 BACKUP=$DB-$(date +%Y-%m-%d).sql
 MIGRATION=/srv/$APP/database.sql

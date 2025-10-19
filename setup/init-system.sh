@@ -42,14 +42,12 @@ sudo -iu postgres psql -c "ALTER USER postgres WITH PASSWORD 'postgres1';"
 
 cd /srv
 
-git clone https://github.com/yourock1988/fullstack-monorepo-boilerplate.git
-
-mv /srv/fullstack-monorepo-boilerplate /srv/boilerplate
+git clone https://github.com/yourock1988/pc-shop.git
 
 chown -R $USER /srv
 chgrp -R $GROUP /srv
 chmod -R 775 /srv 
 
-cd /srv/boilerplate
+cd /srv/pc-shop
 
 bash deploy-app.sh
