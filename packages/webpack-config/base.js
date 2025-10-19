@@ -100,7 +100,7 @@ module.exports = merge(webpackVueConfig, {
     }),
 
     new MiniCssExtractPlugin({
-      filename: path.join('assets', 'css', '[name].[contenthash:8].css'),
+      filename: 'assets/css/[name].[contenthash:8].css',
     }),
 
     new CopyWebpackPlugin({
