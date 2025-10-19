@@ -12,8 +12,8 @@
     "import/resolver": {
       "alias": {
         "map": [
-          ["@", "@monorepo/frontend/src"],
-          ["~", "@monorepo/frontend/src/components"]
+          ["@", "@app-x/frontend/src"],
+          ["~", "@app-x/frontend/src/components"]
         ]
       }
     }
