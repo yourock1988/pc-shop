@@ -8,6 +8,7 @@ set -e
 
 
 USER=webmaster
+GROUP=developers
 APP=pc-shop
 DOMAIN=$APP.web-app.click
 
@@ -15,6 +16,8 @@ DOMAIN=$APP.web-app.click
 systemctl disable $APP.service
 systemctl stop $APP.service
 systemctl daemon-reload
+
+chgrp -R $GROUP /srv/$APP
 
 source ./setup/database/migrate.sh
 
