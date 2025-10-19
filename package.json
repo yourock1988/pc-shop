@@ -1,9 +1,7 @@
 {
   "name": "app-x",
   "version": "0.0.1",
-  "description": "fullstack monorepo boilerplate",
-  "author": "YouROCK",
-  "license": "MIT",
+  "description": "fullstack pc-shop application",
   "main": "./dist/server/https.js",
   "workspaces": [
     "apps/*",
@@ -31,5 +29,36 @@
     "npm-run-all": "^4.1.5",
     "rimraf": "^6.0.1",
     "nodemon": "^3.1.9"
-  }
+  },
+  "engines": {
+    "node": ">=22.11.0",
+    "npm": ">=10.9.0"
+  },
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
+  "cpu": [
+    "x64",
+    "arm64"
+  ],
+  "private": false,
+  "license": "MIT",
+  "author": "YouROCK <admin@web-app.click> (https://web-app.click/)",
+  "homepage": "https://pc-shop.web-app.click/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourock1988/pc-shop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourock1988/pc-shop/issues"
+  },
+  "keywords": [
+    "vue",
+    "node",
+    "express",
+    "fullstack",
+    "pc-shop"
+  ]
 }
