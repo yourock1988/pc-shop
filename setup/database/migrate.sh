@@ -13,10 +13,10 @@ APP=pc-shop
 PATH_BACKUP=/var/lib/postgresql/backup
 BACKUP=$DB-$(date +%Y-%m-%d).sql
 DB_SRC=/srv/$APP/database.sql
-DB_DESTINATION=/var/lib/postgresql/database.sql
+DB_DEST=/var/lib/postgresql/database.sql
 
 mkdir -p $PATH_BACKUP
-mv $DB_SRC $DB_DESTINATION
+cp $DB_SRC $DB_DEST
 
 echo "Начинаю миграцию базы данных..."
 
@@ -29,5 +29,5 @@ echo "database $DB dropped"
 sudo -iu $DB_USER createdb $DB
 echo "database $DB created"
 
-sudo -iu $DB_USER psql -d $DB -f $DB_DESTINATION > /dev/null
+sudo -iu $DB_USER psql -d $DB -f $DB_DEST > /dev/null
 echo "database $DB deploy"
