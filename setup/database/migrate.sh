@@ -15,12 +15,12 @@ BACKUP=$DB-$(date +%Y-%m-%d).sql
 DB_SRC=/srv/$APP/database.sql
 DB_DEST=/var/lib/postgresql/database.sql
 
-mkdir -p $PATH_BACKUP
-cp $DB_SRC $DB_DEST
+sudo -iu postgres mkdir -p $PATH_BACKUP
+sudo -iu postgres cp $DB_SRC $DB_DEST
 
 echo "Начинаю миграцию базы данных..."
 
-sudo -iu $DB_USER pg_dump $DB --clean --if-exists > $PATH_BACKUP/$BACKUP || true
+sudo -iu $DB_USER pg_dump $DB --if-exists --clean -f $PATH_BACKUP/$BACKUP || true
 echo "backup $DB-$(date +%Y-%m-%d) dumped"
 
 sudo -iu $DB_USER dropdb $DB --if-exists --force
