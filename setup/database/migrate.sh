@@ -26,7 +26,7 @@ echo "backup $DB-$(date +%Y-%m-%d) dumped"
 sudo -iu $DB_USER dropdb $DB --if-exists --force
 echo "database $DB dropped"
 
-sudo -iu $DB_USER createdb $DB 
+sudo -iu $DB_USER createdb $DB
 echo "database $DB created"
 
 sudo -iu $DB_USER psql -d $DB -f $DB_DESTINATION > /dev/null
